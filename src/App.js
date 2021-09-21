@@ -19,7 +19,7 @@ export default function App() {
     if (totalFeedback === 0) {
       return 0;
     }
-    return Math.round(((goodOption + neutralOption) / totalFeedback) * 100);
+    return Math.round((goodOption / totalFeedback) * 100);
   };
 
   const handleFeedback = e => {
